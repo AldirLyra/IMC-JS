@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/1827/1827237.svg">
+    <link rel="stylesheet" href="CSS/imc.css">
+    <title>Tabela IMC</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="titulo-principal">Nutrição - Pacientes</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <table>
+                <thead>
+                    <tr class="info">
+                        <th>Nome</th>
+                        <th>Peso (KG)</th>
+                        <th>Altura</th>
+                        <th>Gordura Corporal (%)</th>
+                        <th>IMC</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-pacientes">
+                    <tr id="primeiro-paciente" class="pacientes">
+                        <td class="info-nome">Paulo</td>
+                        <td class="info-peso">500</td>
+                        <td class="info-altura">3.41</td>
+                        <td class="info-gordura">30</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+
+                    <tr id="segundo-paciente" class="pacientes">
+                        <td class="info-nome">João</td>
+                        <td class="info-peso">80</td>
+                        <td class="info-altura">1.72</td>
+                        <td class="info-gordura">40</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+
+                    <tr id="terceiro-paciente" class="pacientes">
+                        <td class="info-nome">Érica</td>
+                        <td class="info-peso">54</td>
+                        <td class="info-altura">1.64</td>
+                        <td class="info-gordura">14</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+
+                    <tr id="quarto-paciente" class="pacientes">
+                        <td class="info-nome">Douglas</td>
+                        <td class="info-peso">80</td>
+                        <td class="info-altura">1.73</td>
+                        <td class="info-gordura">24</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+
+                    <tr id="quinto-paciente" class="pacientes">
+                        <td class="info-nome">Tatiana</td>
+                        <td class="info-peso">46</td>
+                        <td class="info-altura">1.55</td>
+                        <td class="info-gordura">19</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container">
+            <h2 id="titulo-form">Adicionar novo paciente</h2>
+            <ul id="mensagens-erro"></ul>
+            <form id="form-adiciona">
+                <div class="">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+                </div>
+                <div class="grupo">
+                    <label for="peso">Peso:</label>
+                    <input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+                </div>
+                <div class="grupo">
+                    <label for="altura">Altura:</label>
+                    <input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+                </div>
+                <div class="grupo">
+                    <label for="gordura">% de Gordura:</label>
+                    <input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
+                </div>
+
+                <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+            </form>
+        </section>
+
+    </main>
+    <script src="JS/imc.js"></script>
+</body>
+
+</html>
