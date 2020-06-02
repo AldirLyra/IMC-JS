@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/1827/1827237.svg">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <title>Tabela IMC</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="titulo-principal">Nutrição - Pacientes</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <table class="table">
+                <thead>
+                    <tr class="info">
+                        <th>Nome</th>
+                        <th>Peso (KG)</th>
+                        <th>Altura</th>
+                        <th>Gordura Corporal (%)</th>
+                        <th>IMC</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-pacientes">
+                    <tr class="paciente">
+                        <td class="info-nome">Paulo</td>
+                        <td class="info-peso">500</td>
+                        <td class="info-altura">3.41</td>
+                        <td class="info-gordura">30</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+
+                    <tr class="paciente">
+                        <td class="info-nome">João</td>
+                        <td class="info-peso">80</td>
+                        <td class="info-altura">1.72</td>
+                        <td class="info-gordura">40</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+
+                    <tr class="paciente">
+                        <td class="info-nome">Érica</td>
+                        <td class="info-peso">54</td>
+                        <td class="info-altura">1.64</td>
+                        <td class="info-gordura">14</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+
+                    <tr class="paciente">
+                        <td class="info-nome">Douglas</td>
+                        <td class="info-peso">80</td>
+                        <td class="info-altura">1.73</td>
+                        <td class="info-gordura">24</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+
+                    <tr class="paciente">
+                        <td class="info-nome">Tatiana</td>
+                        <td class="info-peso">46</td>
+                        <td class="info-altura">1.55</td>
+                        <td class="info-gordura">19</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container">
+            <h2 id="titulo-form">Adicionar novo paciente</h2>
+            <ul id="mensagens-erro"></ul>
+
+            <form id="form-adiciona">
+                <div class="row">
+                    <div class="form-group col">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="form-control" class="campo">
+                    </div>
+                    <div class="form-group col">
+                        <label for="peso">Peso:</label>
+                        <input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="form-control" class="campo campo-medio">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col">
+                        <label for="altura">Altura:</label>
+                        <input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="form-control" class="campo campo-medio">
+                    </div>
+                    <div class="form-group col">
+                        <label for="gordura">% de Gordura:</label>
+                        <input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="form-control" class="campo campo-medio">
+                    </div>
+                </div>
+                <button id="adicionar-paciente" class="btn btn-outline-success">Adicionar</button>
+            </form>
+        </section>
+
+    </main>
+    <script src="js/calcula-imc.js"></script>
+    <script src="js/adiciona-paciente.js"></script>
+</body>
+
+</html>
